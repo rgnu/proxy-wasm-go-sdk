@@ -17,8 +17,10 @@ package types
 type Action uint32
 
 const (
-	ActionContinue Action = 0
-	ActionPause    Action = 1
+	ActionContinue          Action = 0
+	ActionPause             Action = 1
+	ActionPauseAndWatermark Action = 2
+	ActionPauseNoBuffer     Action = 3
 )
 
 type PeerType uint32
