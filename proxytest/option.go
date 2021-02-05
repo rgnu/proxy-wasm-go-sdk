@@ -1,6 +1,6 @@
 package proxytest
 
-import "github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm"
+import "github.com/rgnu/proxy-wasm-go-sdk/proxywasm"
 
 type EmulatorOption struct {
 	pluginConfiguration, vmConfiguration []byte

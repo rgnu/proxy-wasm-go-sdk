@@ -1,5 +1,5 @@
 # Go SDK for WebAssembly-based Envoy extensions
-[![Build](https://github.com/tetratelabs/proxy-wasm-go-sdk/workflows/build-test/badge.svg)](https://github.com/tetratelabs/proxy-wasm-go-sdk/actions)
+[![Build](https://github.com/rgnu/proxy-wasm-go-sdk/workflows/build-test/badge.svg)](https://github.com/rgnu/proxy-wasm-go-sdk/actions)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 The Go sdk for
@@ -10,8 +10,8 @@ proxy-wasm-go-sdk is powered by [TinyGo](https://tinygo.org/) and does not suppo
 
 ```golang
 import (
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 var counter proxywasm.MetricCounter
@@ -92,7 +92,7 @@ make test.e2e.single name=helloworld # run e2e tests
     - `runtime.GC` is called whenever the heap runs out (see [1](https://tinygo.org/lang-support/#garbage-collection),
     [2](https://github.com/tinygo-org/tinygo/blob/v0.14.1/src/runtime/gc_conservative.go#L218-L239)).
     - TinyGo allows us to disable GC, but we cannot do that since we need to use maps (implicitly causes allocation)
-     for saving the plugin's [state](https://github.com/tetratelabs/proxy-wasm-go-sdk/blob/cf6ad74ed58b284d3d8ceeb8c5dba2280d5b1007/proxywasm/vmstate.go#L41-L46).
+     for saving the plugin's [state](https://github.com/rgnu/proxy-wasm-go-sdk/blob/cf6ad74ed58b284d3d8ceeb8c5dba2280d5b1007/proxywasm/vmstate.go#L41-L46).
     - Theoretically, we can implement our own GC algorithms tailored for proxy-wasm through `alloc(uintptr)` [interface](https://github.com/tinygo-org/tinygo/blob/v0.14.1/src/runtime/gc_none.go#L13) 
     with `-gc=none` option. This is the future TODO.
 - `recover` is [not implemented](https://github.com/tinygo-org/tinygo/issues/891) in TinyGo, and there's no way to prevent the WASM virtual machine from aborting.

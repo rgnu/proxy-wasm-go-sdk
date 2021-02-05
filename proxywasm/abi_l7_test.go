@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/rawhostcall"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/rawhostcall"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 type l7Context struct {

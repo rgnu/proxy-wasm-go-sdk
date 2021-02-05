@@ -17,8 +17,8 @@ package proxytest
 import (
 	"log"
 
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 type networkHostEmulator struct {

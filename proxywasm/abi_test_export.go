@@ -16,7 +16,7 @@
 
 package proxywasm
 
-import "github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+import "github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 
 // this file exists only for proxytest package which is used with the `proxytest` build tag.
 //	Therefore, these functions are not included in a resulting WASM binary

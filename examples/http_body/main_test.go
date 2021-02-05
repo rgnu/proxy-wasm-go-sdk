@@ -3,10 +3,10 @@ package main
 import (
 	"testing"
 
+	"github.com/rgnu/proxy-wasm-go-sdk/proxytest"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxytest"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 func TestHttpBody_OnHttpRequestBody(t *testing.T) {

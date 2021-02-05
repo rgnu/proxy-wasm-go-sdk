@@ -14,7 +14,7 @@
 
 package proxywasm
 
-import "github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+import "github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 
 //export proxy_on_new_connection
 func proxyOnNewConnection(contextID uint32) types.Action {

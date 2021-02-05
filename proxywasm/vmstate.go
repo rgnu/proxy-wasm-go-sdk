@@ -90,7 +90,7 @@ func (s *state) createRootContext(contextID uint32) {
 
 	// NOTE: this is a temporary work around for avoiding nil pointer panic
 	// when users make http dispatch(es) on RootContext.
-	// See https://github.com/tetratelabs/proxy-wasm-go-sdk/issues/110
+	// See https://github.com/rgnu/proxy-wasm-go-sdk/issues/110
 	// TODO: refactor
 	s.contextIDToRootID[contextID] = contextID
 }

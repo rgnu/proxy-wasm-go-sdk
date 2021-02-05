@@ -1,6 +1,6 @@
 package proxywasm
 
-import "github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/rawhostcall"
+import "github.com/rgnu/proxy-wasm-go-sdk/proxywasm/rawhostcall"
 
 func SetEffectiveContext(contextID uint32) {
 	rawhostcall.ProxySetEffectiveContext(contextID)

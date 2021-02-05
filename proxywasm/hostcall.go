@@ -15,8 +15,8 @@
 package proxywasm
 
 import (
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/rawhostcall"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/rawhostcall"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 // wrappers on the rawhostcall package

@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxytest"
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxytest"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 func TestMetric(t *testing.T) {

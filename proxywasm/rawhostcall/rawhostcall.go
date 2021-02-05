@@ -17,7 +17,7 @@
 package rawhostcall
 
 import (
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm/types"
 )
 
 //export proxy_log

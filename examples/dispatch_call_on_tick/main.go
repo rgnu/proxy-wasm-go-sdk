@@ -15,7 +15,7 @@
 package main
 
 import (
-	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm"
+	"github.com/rgnu/proxy-wasm-go-sdk/proxywasm"
 )
 
 const tickMilliseconds uint32 = 100
