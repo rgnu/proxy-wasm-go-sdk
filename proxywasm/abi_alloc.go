@@ -15,8 +15,8 @@
 package proxywasm
 
 //nolint
-//export malloc
-func malloc(size uint) *byte {
-	buf := make([]byte, size)
-	return &buf[0]
-}
+// //export malloc
+// func malloc(size uint) *byte {
+// 	buf := make([]byte, size)
+// 	return &buf[0]
+// }
